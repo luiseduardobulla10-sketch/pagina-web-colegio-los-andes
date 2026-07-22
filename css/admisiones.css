@@ -1,0 +1,352 @@
+/* ENCABEZADO */
+header{
+    background-image: url("../img/montanas.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+}
+
+/* Contenedor logo y título */
+.logo-titulo{
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(11, 73, 136, 0.75);
+}
+
+.logo-titulo img{
+    width: 130px;
+    vertical-align: middle;
+}
+
+.logo-titulo h1{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 45px;
+    color: white;
+    vertical-align: middle;
+}
+
+/* Menú de navegación */
+nav{
+    background-color: #0947a2;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a{
+    color: rgb(253, 252, 252);
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #168f46;
+}
+
+/* MENÚ */
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    position: relative;
+}
+
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #0D3B66;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu li:hover{
+    background: #81C784; 
+}
+
+.menu li a:hover{
+    color: white;
+}
+
+/* SUBMENÚ */
+
+.submenu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #A5D6A7;
+    min-width: 180px;
+    list-style: none;
+    padding: 0;
+}
+
+.submenu li a{
+    padding: 12px;
+    color: #0D3B66;
+}
+
+.submenu li:hover{
+    background: #81C784;
+}
+
+.con-submenu:hover .submenu{
+    display: block;
+}
+nav{
+    background:#d8d8d8;
+}
+
+.menu{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+.menu li{
+    position:relative;
+}
+
+.menu li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu li:hover{
+    background:#15782f;
+}
+
+/* SUBMENÚ */
+
+.submenu{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#d8d8d8;
+    min-width:180px;
+    list-style:none;
+}
+
+.submenu li a{
+    padding:12px;
+}
+
+
+
+/*=========================
+        PROCESO
+==========================*/
+
+.proceso{
+    width:90%;
+    margin:50px auto;
+}
+
+.proceso h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:#0D3B66;
+}
+
+/*=========================
+        TARJETAS
+==========================*/
+
+.contenedor-admision{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+}
+
+.tarjeta{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    transition:.3s;
+    min-height:260px;
+}
+
+.tarjeta:hover{
+    transform:translateY(-8px);
+}
+
+.tarjeta h3{
+    width:45px;
+    height:45px;
+    background:#0D3B66;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.tarjeta h4{
+    color:#0D3B66;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.tarjeta p{
+    text-align:justify;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+/*=========================
+        BOTÓN
+==========================*/
+
+.btn{
+    display:inline-block;
+    background:#1b8222;
+    color:white;
+    text-decoration:none;
+    padding:12px 28px;
+    border-radius:30px;
+    transition:.3s;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background: #b5ca4a;
+}
+
+/*=========================
+        PIE DE PÁGINA */
+
+footer{
+    background: linear-gradient(135deg, #0D3B66, #1E5F74);
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 30px 50px;
+    margin-top: 40px;
+
+    border-top: 5px solid #81C784;
+}
+
+/* Información */
+
+.datos{
+    margin: 10px;
+}
+
+.datos p{
+    margin: 12px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.datos i{
+    color: #81C784;
+    font-size: 18px;
+}
+
+/* Redes sociales */
+
+.redes{
+    display: flex;
+    gap: 15px;
+}
+
+.redes a{
+    width: 50px;
+    height: 50px;
+
+    background: rgba(255,255,255,0.15);
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    font-size: 22px;
+
+    transition: all 0.3s ease;
+}
+
+.redes a:hover{
+    background: #81C784;
+    color: #0D3B66;
+
+    transform: translateY(-5px) scale(1.1);
+}
+
+/* Línea inferior */
+
+footer::after{
+    content: "© 2026 Institución Educativa Los Andes - Todos los derechos reservados";
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    font-size: 14px;
+    color: #d9d9d9;
+}
+/*=========================
+        RESPONSIVE
+==========================*/
+
+@media(max-width:1100px){
+
+    .contenedor-admision{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .logo-titulo{
+        flex-direction:column;
+    }
+
+    .logo-titulo h1{
+        font-size:35px;
+        text-align:center;
+    }
+
+    .menu{
+        flex-direction:column;
+    }
+
+    .contenedor-admision{
+        grid-template-columns:1fr;
+    }
+
+    footer{
+        flex-direction:column;
+        gap:25px;
+        text-align:center;
+    }
+
+}

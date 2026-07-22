@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Institución Educativa Los Andes</title>
+    <link rel="stylesheet" href="css/contacto.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="logo-titulo">
+            <img src="img/logo_escuela-removebg-preview.png" alt="Logo Los Andes">
+            <h1>Institución Educativa Los Andes</h1>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html#inicio">Inicio</a></li>
+
+                <li class="con-submenu">
+                    <a href="#">Quienes somos ▼</a>
+                     <ul class="submenu">
+                <li><a href="simbolos_patrios_colegio_los_andes.html#historia">Historia</a></li>
+                <li><a href="simbolos_patrios_colegio_los_andes.html#mision">Misión</a></li>
+                <li><a href="simbolos_patrios_colegio_los_andes.html#vision">Visión</a></li>
+                <li><a href="simbolos_patrios_colegio_los_andes.html#himno">Himno</a></li>
+                <li><a href="simbolos_patrios_colegio_los_andes.html#bandera">Bandera</a></li>
+            </ul>
+                <li class="con-submenu">
+                    <a href="#">Programas ▼</a>
+                    <ul class="submenu">
+                        <li><a href="programas_academicos.html#preescolar">Preescolar</a></li>
+                        <li><a href="programas_academicos.html#primaria">Primaria</a></li>
+                        <li><a href="programas_academicos.html#bachillerato">Bachillerato</a></li>
+                    </ul>
+                </li>
+
+                <li class="con-submenu">
+                    <a href="#">Servicios ▼</a>
+                    <ul class="submenu">
+                        <li><a href="servicio.html#galeria">Galeria</a></li>
+                    </ul>
+                </li>
+
+                <li class="con-submenu">
+                    <a href="#">Metodologías ▼</a>
+                    <ul class="submenu">
+                       
+                        <li><a href="metodologias.html#reggio-emilia">Reggio Emilia</a></li> 
+                        <li><a href="metodologias.html#steam">STEAM</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="admisiones.html#admisiones">Admisiones</a></li>
+                <li><a href="noticias.html#noticias">Noticias</a></li>
+                <li><a href="contacto.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+   <!-- ==========================
+               TÍTULO
+        ========================== -->
+
+    <section id="contacto" class="titulo">
+
+    <h2>Contáctanos</h2>
+
+    <p>
+        Si deseas obtener más información sobre nuestra institución,
+        diligencia el siguiente formulario.
+    </p>
+
+    </section>
+
+
+
+      <!-- ==========================
+               CONTENEDOR
+           ========================== -->
+
+    <section class="contenedor">
+
+    <!-- FORMULARIO -->
+
+    <div class="formulario">
+
+        <form action="#" method="post">
+
+            <label>Nombre *</label>
+
+            <input
+            type="text"
+            name="nombre"
+            placeholder="Ingrese su nombre"
+            required
+            minlength="3"
+            maxlength="40">
+
+
+
+            <label>Apellidos *</label>
+
+            <input
+            type="text"
+            name="apellido"
+            placeholder="Ingrese sus apellidos"
+            required
+            minlength="3"
+            maxlength="50">
+
+
+
+            <label>Correo electrónico *</label>
+
+            <input
+            type="email"
+            name="correo"
+            placeholder="ejemplo@correo.com"
+            required
+            maxlength="60">
+
+
+
+            <label>Teléfono *</label>
+
+            <input
+            type="tel"
+            name="telefono"
+            placeholder="3101234567"
+            pattern="[0-9]{10}"
+            minlength="10"
+            maxlength="10"
+            required>
+
+
+
+            <label>Programa de interés *</label>
+
+            <select required>
+
+                <option value="">Seleccione un programa</option>
+
+                <option>Preescolar</option>
+
+                <option>Primaria</option>
+
+                <option>Bachillerato</option>
+
+            </select>
+
+
+
+            <label>Mensaje *</label>
+
+            <textarea
+
+            placeholder="Escriba aquí su mensaje..."
+
+            minlength="20"
+
+            maxlength="500"
+
+            required
+
+            ></textarea>
+
+
+
+            <div class="botones">
+
+                <button type="submit">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                    Enviar
+
+                </button>
+
+
+                <button type="reset" class="limpiar">
+
+                    <i class="fa-solid fa-trash"></i>
+
+                    Limpiar
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- MAPA -->
+
+    <div class="mapa">
+
+        <h3>Nuestra ubicación</h3>
+
+        <iframe
+            src="https://www.google.com/maps?q=Tunja,Boyac%C3%A1&output=embed"
+            loading="lazy"
+            allowfullscreen="">
+        </iframe>
+
+        <div class="informacion">
+
+            <p>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                Calle 18 #32-17, Tunja, Boyacá
+
+            </p>
+
+            <p>
+
+                <i class="fa-solid fa-phone"></i>
+
+                302 346 1038
+
+            </p>
+
+            <p>
+
+                <i class="fa-solid fa-envelope"></i>
+
+                info@colegiolosandes.edu.co
+
+            </p>
+
+        </div>
+
+    </div>
+
+            </section>
+
+
+           <!-- ==========================
+                  PIE DE PÁGINA
+                 ========================== -->
+
+    <footer>
+
+    <p>
+
+        © 2026 Institución Educativa Los Andes
+
+    </p>
+
+    </footer>
+
+</body>
+</html>

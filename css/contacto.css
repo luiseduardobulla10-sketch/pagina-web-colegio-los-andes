@@ -1,0 +1,487 @@
+/* ENCABEZADO */
+header{
+    background-image: url("../img/montanas.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+}
+
+/* Contenedor logo y título */
+.logo-titulo{
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(11, 73, 136, 0.75);
+}
+
+.logo-titulo img{
+    width: 130px;
+    vertical-align: middle;
+}
+
+.logo-titulo h1{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 45px;
+    color: white;
+    vertical-align: middle;
+}
+
+/* Menú de navegación */
+nav{
+    background-color: #0947a2;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #04275c;
+}
+
+/* MENÚ */
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    position: relative;
+}
+
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #0D3B66;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu li:hover{
+    background: #81C784; 
+}
+
+.menu li a:hover{
+    color: white;
+}
+
+/* SUBMENÚ */
+
+.submenu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #A5D6A7;
+    min-width: 180px;
+    list-style: none;
+    padding: 0;
+}
+
+.submenu li a{
+    padding: 12px;
+    color: #0D3B66;
+}
+
+.submenu li:hover{
+    background: #81C784;
+}
+
+.con-submenu:hover .submenu{
+    display: block;
+}
+nav{
+    background:#d8d8d8;
+}
+
+.menu{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+.menu li{
+    position:relative;
+}
+
+.menu li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu li:hover{
+    background:#15782f;
+}
+
+/* SUBMENÚ */
+
+.submenu{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#d8d8d8;
+    min-width:180px;
+    list-style:none;
+}
+
+.submenu li a{
+    padding:12px;
+}
+/*=============================
+RESET
+=============================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f7fb;
+    color:#333;
+
+}
+
+
+
+/*=============================
+TÍTULO
+=============================*/
+
+.titulo{
+
+    text-align:center;
+    margin:40px 0;
+
+}
+
+.titulo h2{
+
+    color:#0D3B66;
+    font-size:38px;
+    margin-bottom:15px;
+
+}
+
+.titulo p{
+
+    width:70%;
+    margin:auto;
+    color:#666;
+    line-height:1.8;
+
+}
+
+/*=============================
+CONTENEDOR
+=============================*/
+
+.contenedor{
+
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+}
+
+/*=============================
+FORMULARIO
+=============================*/
+
+.formulario{
+
+    background:white;
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.formulario label{
+
+    display:block;
+    margin-top:18px;
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+    color:#0D3B66;
+
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea{
+
+    width:100%;
+
+    padding:13px;
+
+    border:1px solid #cfcfcf;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus{
+
+    outline:none;
+
+    border:2px solid #4CAF50;
+
+    box-shadow:0 0 8px rgba(76,175,80,.4);
+
+}
+
+textarea{
+
+    resize:vertical;
+
+    min-height:150px;
+
+}
+
+/*=============================
+BOTONES
+=============================*/
+
+.botones{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:30px;
+
+}
+
+button{
+
+    flex:1;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+button i{
+
+    margin-right:8px;
+
+}
+
+button[type="submit"]{
+
+    background:#0D3B66;
+
+}
+
+button[type="submit"]:hover{
+
+    background:#145ca4;
+
+}
+
+.limpiar{
+
+    background:#4CAF50;
+
+}
+
+.limpiar:hover{
+
+    background:#2e7d32;
+
+}
+
+/*=============================
+MAPA
+=============================*/
+
+.mapa{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.mapa h3{
+
+    text-align:center;
+
+    color:#0D3B66;
+
+    margin-bottom:20px;
+
+    font-size:30px;
+
+}
+
+.mapa iframe{
+
+    width:100%;
+
+    height:420px;
+
+    border:none;
+
+    border-radius:10px;
+
+}
+
+.informacion{
+
+    margin-top:25px;
+
+}
+
+.informacion p{
+
+    margin:15px 0;
+
+    font-size:18px;
+
+}
+
+.informacion i{
+
+    color:#4CAF50;
+
+    width:30px;
+
+}
+
+/*=============================
+FOOTER
+=============================*/
+
+footer{
+
+    margin-top:60px;
+
+    background:#0D3B66;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+/*=============================
+VALIDACIONES
+=============================*/
+
+input:valid,
+select:valid,
+textarea:valid{
+
+    border-left:5px solid #4CAF50;
+
+}
+
+input:invalid:focus,
+textarea:invalid:focus,
+select:invalid:focus{
+
+    border-left:5px solid red;
+
+}
+
+/*=============================
+RESPONSIVE
+=============================*/
+
+@media(max-width:900px){
+
+.contenedor{
+
+    grid-template-columns:1fr;
+
+}
+
+.logo-titulo{
+
+    flex-direction:column;
+
+}
+
+.logo-titulo h1{
+
+    font-size:30px;
+    text-align:center;
+
+}
+
+.titulo p{
+
+    width:90%;
+
+}
+
+.mapa iframe{
+
+    height:300px;
+
+}
+
+.botones{
+
+    flex-direction:column;
+
+}
+
+}
